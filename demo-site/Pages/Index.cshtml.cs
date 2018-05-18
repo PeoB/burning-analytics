@@ -11,6 +11,7 @@ namespace demo_site.Pages
     {
         public void OnGet()
         {
+            this.ViewData["inspectMode"] = HttpContext.Request.Query["analyze"] == "true";
         }
     }
 }

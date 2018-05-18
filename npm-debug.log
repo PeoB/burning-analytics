@@ -1,0 +1,71 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/Users/pbondes/.nvm/versions/node/v6.10.2/bin/node',
+1 verbose cli   '/Users/pbondes/.nvm/versions/node/v6.10.2/bin/npm',
+1 verbose cli   'i',
+1 verbose cli   '--save',
+1 verbose cli   'simpleheat' ]
+2 info using npm@3.10.10
+3 info using node@v6.10.2
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData simpleheat
+8 silly fetchNamedPackageData simpleheat
+9 silly mapToRegistry name simpleheat
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://npme.walmart.com/
+12 silly mapToRegistry data Result {
+12 silly mapToRegistry   raw: 'simpleheat',
+12 silly mapToRegistry   scope: null,
+12 silly mapToRegistry   escapedName: 'simpleheat',
+12 silly mapToRegistry   name: 'simpleheat',
+12 silly mapToRegistry   rawSpec: '',
+12 silly mapToRegistry   spec: 'latest',
+12 silly mapToRegistry   type: 'tag' }
+13 silly mapToRegistry uri https://npme.walmart.com/simpleheat
+14 verbose request uri https://npme.walmart.com/simpleheat
+15 verbose request no auth needed
+16 info attempt registry request try #1 at 1:29:16 PM
+17 verbose request id 6d667fe1fc2b5b59
+18 http request GET https://npme.walmart.com/simpleheat
+19 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND npme.walmart.com npme.walmart.com:443
+20 info attempt registry request try #2 at 1:29:26 PM
+21 http request GET https://npme.walmart.com/simpleheat
+22 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND npme.walmart.com npme.walmart.com:443
+23 info attempt registry request try #3 at 1:30:26 PM
+24 http request GET https://npme.walmart.com/simpleheat
+25 silly fetchPackageMetaData Error: getaddrinfo ENOTFOUND npme.walmart.com npme.walmart.com:443
+25 silly fetchPackageMetaData     at errnoException (dns.js:28:10)
+25 silly fetchPackageMetaData     at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:76:26)
+25 silly fetchPackageMetaData  error for simpleheat { Error: getaddrinfo ENOTFOUND npme.walmart.com npme.walmart.com:443
+25 silly fetchPackageMetaData     at errnoException (dns.js:28:10)
+25 silly fetchPackageMetaData     at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:76:26)
+25 silly fetchPackageMetaData   code: 'ENOTFOUND',
+25 silly fetchPackageMetaData   errno: 'ENOTFOUND',
+25 silly fetchPackageMetaData   syscall: 'getaddrinfo',
+25 silly fetchPackageMetaData   hostname: 'npme.walmart.com',
+25 silly fetchPackageMetaData   host: 'npme.walmart.com',
+25 silly fetchPackageMetaData   port: 443 }
+26 silly rollbackFailedOptional Starting
+27 silly rollbackFailedOptional Finishing
+28 silly runTopLevelLifecycles Finishing
+29 silly install printInstalled
+30 verbose stack Error: getaddrinfo ENOTFOUND npme.walmart.com npme.walmart.com:443
+30 verbose stack     at errnoException (dns.js:28:10)
+30 verbose stack     at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:76:26)
+31 verbose cwd /projects/jayway/burning-analytics
+32 error Darwin 16.7.0
+33 error argv "/Users/pbondes/.nvm/versions/node/v6.10.2/bin/node" "/Users/pbondes/.nvm/versions/node/v6.10.2/bin/npm" "i" "--save" "simpleheat"
+34 error node v6.10.2
+35 error npm  v3.10.10
+36 error code ENOTFOUND
+37 error errno ENOTFOUND
+38 error syscall getaddrinfo
+39 error network getaddrinfo ENOTFOUND npme.walmart.com npme.walmart.com:443
+40 error network This is most likely not a problem with npm itself
+40 error network and is related to network connectivity.
+40 error network In most cases you are behind a proxy or have bad network settings.
+40 error network
+40 error network If you are behind a proxy, please make sure that the
+40 error network 'proxy' config is set properly.  See: 'npm help config'
+41 verbose exit [ 1, true ]
