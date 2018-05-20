@@ -33,7 +33,7 @@ namespace demo_site
             await Clients.Group("new").SendAsync("echo", selector, position);
             
             
-            await Task.Delay(10000);
+            await Task.Delay(30000);
             
             positions.Remove(position);
             oldPositions.Add(position);
@@ -46,7 +46,7 @@ namespace demo_site
 
             updateTime?.Invoke();
 
-            await Task.Delay(10000);
+            await Task.Delay(30000);
             oldPositions.Remove(position);
             
             oldSelectors[selector] -= 1;
